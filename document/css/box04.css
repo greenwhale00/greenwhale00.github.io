@@ -1,0 +1,67 @@
+h1 {
+    line-height: 100px;
+    background: rgb(55, 207, 149);
+}
+
+nav {
+    line-height: 100px;
+    background: rgb(116, 116, 187);
+}
+
+.right {
+    line-height: 100px;
+    background: rgb(235, 235, 102);
+}
+
+.header01 {
+    display: flex;
+}
+
+.header02 {
+    display: flex;
+    justify-content: center;
+}
+
+.header03 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header04 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header05 {
+    display: flex;
+    ;
+}
+
+.header05 nav {
+    margin: 0 0 0 auto;
+}
+
+
+
+.basic {
+    line-height: 100px;
+
+}
+
+.basic .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.basic nav {
+    margin: 0 0 0 auto;
+}
+
+.basic nav ul {
+    display: flex;
+}
+
+.basic .icon {
+    margin: 0 0 0 30px;
+}
