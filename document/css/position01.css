@@ -1,0 +1,21 @@
+.popup {
+    /* 이 4개는 쌍으로 공식, 
+    수치단위를 꼭 써줘야함. 0제외 */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+
+
+    width: 450px;
+    height: 350px;
+    background: rgb(255, 145, 0);
+   
+   }
+
+   .popup button{
+       position: absolute;
+       bottom: 15px;
+       right: 15px;
+
+   }
