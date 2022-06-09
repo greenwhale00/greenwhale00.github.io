@@ -1,0 +1,29 @@
+.header {
+    line-height: 100px;
+    background: #cce2e4;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container nav {
+    margin: 0 auto;
+}
+
+.header .container nav>ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+.header .container .btn i {
+    background: #f7f7f7;
+    border-radius: 4px;
+    font-size: 23px;
+    padding: 5px;
+    cursor: pointer;
+
+}
