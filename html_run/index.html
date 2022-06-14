@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASIC</title>
+
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <h1>HTML BASIC</h1>
+    <hr />
+    <h2>기본 박스 : box-model</h2>
+    <ul>
+        <li>
+            <a href="./doc/box01.html">기본 박스 01</a>
+            <p>기본적인 박스의 성질에 대한 이해 width height padding margin</p>
+            <p></p>
+        </li>
+        <li>
+            <a href="./doc/box02.html">기본 박스 02</a>
+            <p>선택자에 대한 이해</p>
+            <p></p>
+        </li>
+    </ul>
+    <hr />
+    <h2>다단 메뉴</h2>
+    <ul>
+        <li>
+            <a href="./doc/multi_menu01.html">다단메뉴 01</a>
+            <p></p>
+            <p>
+                배웠던 position과 display, 선택자를 가지고 응용해서 다단메뉴를 만들어 보았다.<br />
+                menu0$가 hover되었을때 나오는 하위 smenu0$들의 position(1), display(2) 설정값 다시 확인
+            </p>
+        </li>
+        <li>
+            <a href="./doc/multi_menu02.html">다단메뉴 02</a>
+            <p>자연스럽게 떠오르는 다단메뉴<br />
+                opacity와 visibility를 이용해서 hover될때 표현되게함 </p>
+        </li>
+        <em>2022.06.02</em>
+    </ul>
+    <hr />
+    <h2>display & position </h2>
+    <ul>
+        <li>
+            <a href="./doc/display01.html">display 01</a>
+            <p>inline / block / inline-block</p>
+            <p>inline 요소는 width height, 상하margin, padding 값을 줄 수가 없다 <br />
+                inline-block 요소의 부모에 text-align:center;로 박스를 가로로 배열할 수 있다. <br />
+                inline-block 요소 사이의 간격을 없애려면 (박스를 이어붙이려면) font-size:0;을 해 주어야 한다. <br />
+                inline요소를 block요소로 바꿈 <br />
+                박스 사이의 간격이 4px정도 생긴다
+                폰트를 살리려면 inline-block요소에 다시 font-size를 넣어줘야한다.
+
+            </p>
+        </li>
+        <li>
+            <a href="./doc/position01.html">position 01</a>
+            <p>position: relative, absolute, fixed;</p>
+            <p>position:relative; 좌표를 가지는 position상태가 된다. <br />
+                일반적인 positon의 floating이나 width의 변화가 없다. <br />
+                position:absolute; 뜬다/쪼그라든다/기준점이 없어져서 body를 기준으로 포개진다.<br />
+                block의 속성을 가지게 된다. <br />
+                position: absolute; 의 기준을 부모요소의 position: relative, absolute, fixed로 기준이 된다.<br />
+                position:absolute; 뜬다/쪼그라든다/기준점이 없어져서 body를 기준으로 포개진다. <br />
+                block의 속성을 가지게 된다.<br />
+                position-fixed는 기준이 없다 (viewport를 기준으로 한다)
+                스크롤바가 생기지 않는다 <br />
+                z-index로 흐름의 순서를 바꿔줄 수 있다. (설정값은 정수를 쓴다) <br /></p>
+        </li>
+        <li>
+            <a href="./doc/position02.html">position 02</a>
+            <p>position: sticky;</p>
+            <p>position: sticky;를 이용한 레이아웃 구성 </p>
+            <p><a
+                    href="https://www.biew.co.kr/entry/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%85%94%EA%B0%80-%EC%95%8C%EA%B3%A0%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0-display-table-%EC%86%8D%EC%84%B1">참고</a>
+                display: table;
+            </p>
+        </li>
+        <li>
+            <a href="./doc/position03.html">MANGO</a>
+            <p>position: sticky; / fixed; =>다시 정리</p>
+            <p>flex-direction: column; =>다시 정리</p>
+            <p>align-items: flex-start; =>다시 정리</p>
+            <p>justify-content: center; =>다시 정리</p>
+            <p>display: flex;</p>
+            <p>흑백필터 filter: grayscale(1) 밝기 조절 brightness(0.4);</p>
+            <p>js - header 아이콘을 '클릭'할때 cover가 떠오르게 한다</p>
+        </li>
+        <em>2022.06.03</em>
+    </ul>
+    <hr />
+    <h2>Hover를 이용한 Position 이해</h2>
+    <ul>
+        <li>
+            <a href="./doc/hover01.html">Hover 01</a>
+            <p>Hover 기능을 이용해 다양한 꾸밈기능을 넣어보았다</p>
+
+            <strong>nav menu : </strong> <br />
+            <p>
+                line-height는 50px로 띄우고 border-top/bottom으로 전체 박스에 윤곽선 넣기 <br />
+                nav>ul 잡아서 width는 1200px, margin: 0 auto;로 가운데 정렬, display:flex;로 5개 가로배치<br />
+                nav>ul>li 잡아서 border-left로 메뉴박스 사이 윤곽선을 넣는다<br>
+                menu05번 박스 왼쪽에서 선을 그어줘야 하기 때문에 nav>ul>li:last-child를 잡아서 border-left선을 한번 더 긋는다. <br />
+                menu0$에 hover하면 박스 밑에 선이 그이도록 nav>ul>li::after를 잡아준다 <br />
+                nav>ul>li::after에는 무조건 content:"";을 넣어주고 바닥쪽에 선이 생기게 bottom:0;잡고 height로 굵기 조절. 중간에서 선이 생기게 left: 50%;
+                transform: translateX(-50%); 넣어준다.<br />
+                떠올라야 하므로 position: absolute;/nav>ul>li가 기준이 되게 position: relative; <br />
+                hover 되기 전 after에 width는 0, transisition은 적절히 0.5s <br />
+                nav>ul>li:hover::after에 width를 100%줘서 보이게 한다!!<br />
+                메뉴 박스 li를 display:block;시켜 박스 전체에 커서가 올라갈때 손가락모양이 되도록 함
+            </p>
+
+            <strong>section class = hover01</strong>
+            <p>
+                section 밑 container에<br>
+                display: flex;
+                gap: 30px;
+                width: 1200px;
+                margin: 0 auto; 넣어서 container아래 피규어에 들어갈 사진 가로 배치 <br />
+                figure밑에 이미지 넣고 각 이미지 밑에 box div넣어서 이미지를 덮는다. <br />
+                box는 fighre 이미지를 덮을수 있게 top: 0;, left: 0;, width: 0;, height: 100%; 값으로 좌표 주고 position: absolute;으로 떠오르게
+                함.<br>(반드시 box의 부모요소인 figure에 position: relative;줘야함.) <br />
+                box에 쓰인 hover text는 display: flex;, justify-content: center;, align-items: center;로 박스 중앙에 오게 함<br />
+                hover 되면 box의 이미지는 옆으로 움직이여야 하므로 .hover01 .container figure:hover img 잡아서 transform: translateX(50px);
+                시킨다. <br />(이러면 이미지가 figure 바깥으로 빠져 나가기 때문에 figure에서 overflow: hidden;을 넣어줘야함)
+                <br />
+                자연스럽게 움직여야 하므로 hover 전 .hover01 .container figure img를 잡아서 transition: transform 0.5s; 시킨다 <br />
+                이미지를 덮어쓴 박스는 hover되었을때 왼쪽에서 나타나게끔 .hover01 .container figure:hover .box를 잡고 width: 150px;, opacity: 1;
+                값을 줘서 보이게 한다.
+            </p>
+
+            <strong>section class = hover02</strong>
+
+            <p>
+                linear-gradient를 사용해 hover02 section 전체에 백그라운드를 넣었다.
+            </p>
+            <p>
+                hover01과 박스, 이미지 배열 상동
+            </p>
+            <p>
+                hover되었을때 figure박스 1.좌+상/2.하+우에 선이 그이도록 한다.
+            </p>
+            <p>
+                1.좌+상 = .hover02 .container figure::before<br />
+                border-top/left로 선 긋기. <br />
+                top: 0;, left: 0; 좌표 주고 position: absolute; (.hover02 .container figure에 기준 position잡는다)<br />
+                width: 0;, height: 0;,box-sizing: border-box;, opacity: 0;으로 hover전 안보이게 함<br />
+                2. 하+우 = .hover02 .container figure::after<br />
+                1번과 동일. BUT!! 좌+상 선이 다 그여진 다음에 그여져야 하므로 transition: 0.5s 0.3s(여유시간 더 주기);
+            </p>
+            <p>
+                1.좌+상/2. 하+우 모두 hover 주기<br />
+                width: 100%;, height: 100%;, opacity: 1;
+            </p>
+
+            <strong>section class = hover03</strong>
+            <p>hover02와 유사하지만 사각형의 사변의 선이 순차적으로 그려진다</p>
+            <p>
+                1. left to right - .hover03 figure::before<br />
+                width: 0;, height: 10px; -> (hover) width: 100%
+            </p>
+            <p>
+                2. right to bottom - .hover03 figure::after<br />
+                width: 10px;, height: 0; -> (hover) height: 100%
+            </p>
+            <p>
+                3. bottom to left - .hover03 figure .box::before<br />
+                width: 0;, height: 10px; -> (hover) max-width: 100%
+            </p>
+            <p>
+                4. left to top - .hover03 figure .box::after<br />
+                width: 10px;, height: 0; -> (hover) height: 100%
+            </p>
+        </li>
+        <em>2022.06.07.Tue</em>
+    </ul>
+    <hr />
+    <h2>가상요소 선택자 ::before ::after</h2>
+    <ul>
+        <li>
+            <a href="./doc/pseudo_element01.html">가상요소 선택자 01</a>
+            <p><strong>nth-child(even)</strong> - 짝수 선택</p>
+            <p><strong>::before/::after</strong> - content: "";</p>
+            <p><strong>section class="psd02"</strong> - ::after로 display: block;써서 가로줄 긋기(width로 길이주고 height로 두께조절)</p>
+            <p><strong>section class="psd03"</strong> - psd02와 유사하지만 display: inline-block;을 써서 h2 앞, 뒤에 선을
+                그어줌(vertical-align: middle;으로 박스 가운데 오게함)</p>
+            <p><strong>section class="psd04"</strong> - xeicon 유니코드로 content 갑넣기 + font-family: xeicon !important;
+                <br />.dot_list>li::before로 빨간 동그라미 만들고 .dot_list>li에 position기준 주고 border-bottom으로 밑에 줄긋기
+            </p>
+            <p><strong>section class="psd05"</strong> - .psd05 h2::after잡아서 나뭇잎 만들기<br />content: attr(data-num);써서 번호넣은
+                동그라미 만들기<br /> hover 될때 transform: rotateX(720deg);써서 돌게 만들기</p>
+            <p><strong>section class="psd06"</strong> - hr class="list_hr" 클래서 이름써서 hr 꾸미기<br />hr.list_hr::after써서 동그라미
+                그리고 아이콘 넣음. (당연히 아이콘은 떠올라야하니 position: absolute;/클래스 이름잡은 hr에 기준position)</p>
+        </li>
+        <li>
+            <a href="./doc/psdtohtml01.html">시안 01</a>
+            <p>포토샵 시안 대로 vscode짜기</p>
+        </li>
+        <em>2022.06.08.Wed</em>
+    </ul>
+
+    <hr />
+    <h2>유형별 Header</h2>
+    <ul>
+        <li>
+            <a href="./doc/psdtohtml02.html">시안 02</a>
+            <p>포토샵 시안 대로 vscode짜기<strong></strong></p>
+
+        </li>
+        <li>
+            <a href="./doc/basic01.html">기본틀</a><br />
+            <img src="./img/html_basic_layout.png" alt="">
+        </li>
+        <li>
+            <a href="./doc/header01.html">header 01</a>
+            <p><strong>로고 + 메뉴 가로배치</strong> - container에 justify-content: space-between; 설정으로 로고와 메뉴 사이 간격 조정</p>
+        </li>
+        <li>
+            <a href="./doc/header02.html">header 02</a>
+            <p><strong>로고 + 메뉴 + 아이콘 가로배치</strong> - justify-content: space-between; 설정 쓰지 않음 <br />
+                nav는 margin: 0 0 0 auto;, 아이콘 btn은 margin: 0 0 0 40px;로 메뉴박스와 아이콘 사이에 여백 줌 </p>
+        </li>
+        <li>
+            <a href="./doc/header03.html">header 03</a>
+            <p><strong>로고 + 메뉴 + 아이콘 가로배치 후 메뉴만 센터정렬</strong> - .header h1와 .header .btn를 둘다 width: 200px;로 잡고 아이콘 버튼은
+                text-align: right;으로 오른쪽 정렬시킴</p>
+        </li>
+        <li>
+            <a href="./doc/header04.html">header 04</a>
+            <p><strong>가로배치</strong> - .header nav를 margin 0 auto잡아서 메뉴박스를 위치시킴</p>
+        </li>
+        <li>
+            <a href="./doc/header05.html">header 05</a>
+            <p><strong>가로배치 - 로고 중앙 정렬</strong> - cf).vertical-align: middle;은 line-height로 잡아둔 픽셀을 조금 늘린다 <br />nav>ul,
+                hr, ul class="service"를 위치시키고 nav에 display: flex; 설정값 줌. 그리고 nav밑에 모든 요소에 flex: 1;값 주어서 배치시킴<br /> 로고는
+                h1에 text-align: center; 걸어서 중앙정렬
+            </p>
+        </li>
+        <em>2022.06.09.Thu</em>
+    </ul>
+
+    <hr />
+    <h2>Multi_menu</h2>
+    <ul>
+        <li>
+            <a href="./doc/multi_menu03.html">반응형 멀티메뉴 01</a>
+            <p></p>
+            <p>
+                제이쿼리를 이용하여 반응형 웹에서 클릭으로 슬라이드토글되는 멀티메뉴 만들기 <br />
+                so difficult....I still don's know.
+
+            </p>
+        </li>
+        <li>
+            <p>Git 설치 </p>
+        </li>
+        <li>
+            <p>Node.js 설치</p>
+        </li>
+
+        <em>2022.06.10 Fri</em>
+    </ul>
+    <hr />
+    <h2>Slick</h2>
+    <ul>
+        <li>
+            <a href="./doc/slick01.html">Slick 01</a>
+            <p><strong>slick 제이쿼리 다루기 - 01</strong></p>
+            <p>이미지 3개 개별 슬릭 돌리기</p>
+            <p>slidesToShow - 한번에 이미지 3개 보이는 슬릭</p>
+            <p>슬릭 이미지 위에 박스 넣어서 글씨 삽입하기</p>
+            <p>slick-dots 잡아서 상태표시줄 만들기</p>
+            <p>slick-arrow 잡아서 좌우 화살표 만들기 - hover 되었을때 opacity transition</p>
+            <p>a 링크로 wheel 만들기</p>
+
+            <p>
+                position 설정으로 여러 기능들을 적절한 위치에 배치시킨다
+            </p>
+        </li>
+
+
+        <em>2022.06.13 Mon</em>
+    </ul>
+    <ul>
+        <li>
+            <a href="./doc/slick02.html">Slick 02</a>
+            <p><strong>slick 제이쿼리 다루기 - 02</strong></p>
+            <p>slick 슬라이드 위에 별도의 박스를 position:absolute;로 띄운 뒤 제이쿼리 써서 num 표시하기</p>
+            <p>slick - Center Mode => 처음부터 끝까지 하나씩 뜯어봐야함!!!!!!! </p>
+            <P><strong>OH MY GOD</strong>
+            </P>
+
+
+        </li>
+
+
+        <em>2022.06.14 Tue</em>
+    </ul>
+</body>
+
+</html>
