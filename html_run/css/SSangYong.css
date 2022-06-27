@@ -1,0 +1,274 @@
+* {}
+
+outline: 1px solid #f00;
+
+header {
+
+    position: absolute;
+
+    /* inset: 0 0 auto 0; */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    line-height: 80px;
+
+    color: #fff;
+    font-size: 15px;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 23px 50px;
+}
+
+header nav {
+    margin: 25px 0 31px 100px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header nav>.menu1 {
+    display: flex;
+    gap: 40px;
+}
+
+header nav>.menu2 {
+    display: flex;
+    gap: 30px;
+}
+
+header .btn {
+    margin: 25px 50px 31px 30px;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .btn i {
+    font-size: 15px;
+    padding: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+.main_slider {
+
+    height: 100vh;
+    background: url(../img/SS_main.jpg) no-repeat center center/cover;
+
+}
+
+
+.box {
+    display: flex;
+    line-height: 80px;
+}
+
+.main_Visual {
+    margin: 0 auto 150px auto;
+}
+
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main .main_01 {
+    margin: 50px auto 50px auto;
+    text-align: center;
+}
+
+#main .main_01 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    line-height: auto;
+}
+
+#main .main_01 p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+
+}
+
+#main h3 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 50px 0 0 0;
+}
+
+.main_02 .container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.main_02 .innerBox {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.main_02 .innerBox a {
+    display: block;
+    font-size: 17px;
+}
+
+
+#main2 .main_03 {
+    margin: 100px auto auto auto;
+    width: 1200px;
+    text-align: center;
+}
+
+#main2 .main_03 h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+
+
+#main2 .main_03 .innerBox {
+
+    width: 1200px;
+    gap: 30px;
+
+}
+
+#main2 .main_03 .innerBox .box {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+#main2 .main_03 .innerBox a {
+    display: block;
+}
+
+#main2 .main_03 .innerBox .box .box00 {
+    width: 175px;
+    height: 152px;
+    border: 1px solid #ddd;
+
+}
+
+.slider {
+    width: 1200px;
+    margin: 150px auto auto auto;
+}
+
+.customer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.customer>div {
+    flex: 1;
+}
+
+.customer .left {
+    text-align: right;
+    background: url(../img/customer_left.jpg) no-repeat center center/cover;
+}
+
+.customer .right {
+    text-align: left;
+    background: url(../img/customer_right.jpg) no-repeat center center/cover;
+    border-left: 1px solid var(--gc);
+}
+
+.customer>div a {
+    display: block;
+    color: #fff;
+    padding: 50px 40px;
+    text-shadow: 0 0 3px var(--dc);
+    background: url(../img/pt-bg04.png);
+}
+
+.customer>div a h3 {
+    font-size: 31px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.customer>div a p {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #f1f1f1;
+    color: #231815;
+
+    font-size: 13px;
+
+}
+
+.zeroTop {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+#footer .zeroTop .logo_top {
+    margin: 0 0 30px 0;
+    padding: 50px 0 0 0;
+
+}
+
+#footer .top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footer .top dt,
+#footer .top dd {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    justify-content: space-between;
+}
+
+#footer .top i {
+    font-size: 25px;
+}
+
+
+#footer .bottom address li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-style: normal;
+    line-height: 20px;
+}
+
+#footer .bottom address .copy {
+    font-style: normal;
+    line-height: 20px;
+}
+
+#footer .container {
+    justify-content: space-between;
+}
+
+#footer .sns i {
+    margin: 0 0 0 20px;
+}
