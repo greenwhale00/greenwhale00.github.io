@@ -1,8 +1,3 @@
-* {
-    outline: 1px solid #f00;
-}
-
-
 header {
     position: absolute;
 
@@ -49,7 +44,7 @@ header .btn {
 
 }
 
-header .btn i {}
+
 
 .container {
     display: flex;
@@ -153,14 +148,14 @@ header .btn i {}
 
 #main2 {
     margin: 0 auto;
-
 }
 
 #main2 .main_03 {
     margin: 0 auto;
     width: 1200px;
     text-align: center;
-    justify-content: center;
+    padding-top: 50px;
+    border-top: 1px solid #ddd;
 }
 
 #main2 .main_03 h3 {
@@ -169,36 +164,64 @@ header .btn i {}
     margin: 0 0 50px 0;
 }
 
-#main2 .main_03 .tabs_nav {
+#main2 .main_03 .slider-for {
     width: 1200px;
-
+    margin: 0 auto;
+    padding: 0 565px;
 }
 
-#main2 .main_03 .tabs_nav .content {
+
+#main2 .main_03 .slider-for figure {
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#main2 .main_03 .slider-for figure a {
+    display: inline-block;
+
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#main2 .slider-for .slick-dots {
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
-}
-
-#main2 .main_03 li {
+    text-align: center;
     justify-content: center;
-    padding: 20px 0 0 0;
+    /* list-style-type: none; */
+    padding: 15px;
 }
 
-#main2 .main_03 a {
-    display: block;
-    padding: 15px 0 0 0;
+#main2 .main_03 .slider-for .slick-dots li {
+    display: inline-block;
+    margin: 10px;
 }
 
-#main2 .main_03 .tabs_nav .content {
-    margin: 0 0 70px 0;
+#main2 .main_03 .slider-for .slick-dots li button {
+    border: none;
+    outline: none;
+    padding: 0 0;
+    background: #ddd;
+    color: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    text-indent: -9999px;
 }
 
-#main2 .main_03 .tabs_nav .content li {
-    width: 175px;
-    height: 152px;
-    background: #f1f1f1;
+
+#main2 .main_03 .slider-for .slick-dots li.slick-active button {
+    background: #666;
 }
+
+#main2 .main_03 .slider-for figure a {
+    margin: 0 auto;
+}
+
+
 
 #slick {
     width: 1200px;
@@ -206,8 +229,15 @@ header .btn i {}
     position: relative;
 }
 
-#slick .slider .inbox {
-    padding: 0 300px;
+
+
+#slick .slider-nav .inbox {
+    padding: 0 10px;
+}
+
+
+#slick .inbox slick-slide slick-current slick-active slick-center {
+    opacity: 1;
 }
 
 
@@ -216,16 +246,16 @@ header .btn i {}
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #33ff33;
+    color: #fff;
 
 }
 
 #slick .productArrows i:nth-child(1) {
-    margin: 0 0 0 -200px;
+    margin: 0 0 0 -450px;
 }
 
 #slick .productArrows i:nth-child(2) {
-    margin: 0 0 0 200px;
+    margin: 0 0 0 450px;
 }
 
 .customer {
@@ -272,12 +302,14 @@ header .btn i {}
 #news {
     width: 1200px;
     margin: 0 auto;
+
+    padding-top: 50px;
 }
 
 #news h2 {
     font-size: 25px;
     font-weight: 500;
-    margin: 100px auto 10px auto;
+    margin: 0 auto 10px auto;
     text-align: center;
 }
 
@@ -285,7 +317,16 @@ header .btn i {}
     font-size: 15px;
     font-weight: 300;
     text-align: center;
-    margin: auto auto 50px auto;
+    margin: 0 auto 50px auto;
+}
+
+#news p::after {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 1px;
+    background: #ddd;
+    margin: 30px auto;
 }
 
 #news .container {
@@ -336,13 +377,15 @@ header .btn i {}
 
 
 #footer {
-    background: #f1f1f1;
-    color: #231815;
+    background: #333;
+    color: #f1f1f1;
     font-size: 13px;
+    height: 250px;
 }
 
 .zeroTop {
     width: 1200px;
+
     margin: 0 auto;
     line-height: 50px;
 }
