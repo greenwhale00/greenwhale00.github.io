@@ -12,7 +12,7 @@ header {
     width: 100%;
 
     line-height: 80px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
     color: #fff;
     font-size: 15px;
     z-index: 999;
@@ -46,7 +46,10 @@ header nav>.menu2 {
 
 header .btn {
     margin: 25px 50px 31px 30px;
+
 }
+
+header .btn i {}
 
 .container {
     display: flex;
@@ -80,9 +83,13 @@ header .btn {
     margin: 0 auto 150px auto;
 }
 
+
+
 #main {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 0 80px 0;
+
 }
 
 #main .main_01 {
@@ -123,19 +130,37 @@ header .btn {
     gap: 30px;
 }
 
+.main_02 .box {
+    margin: 0 0 30px 0;
+}
 
-
-.main_02 .innerBox a {
+.main_02 .box a {
     display: block;
     font-size: 17px;
 }
 
+.main_02 .container figure:hover img {
+    transform: scale(1.1);
+}
 
+.main_02 .container figure img {
+    transition: transform 0.5s;
+}
+
+.main_02 .container figure .box {
+    overflow: hidden;
+}
+
+#main2 {
+    margin: 0 auto;
+
+}
 
 #main2 .main_03 {
-    margin: 100px auto auto auto;
+    margin: 0 auto;
     width: 1200px;
     text-align: center;
+    justify-content: center;
 }
 
 #main2 .main_03 h3 {
@@ -144,41 +169,63 @@ header .btn {
     margin: 0 0 50px 0;
 }
 
-
-
-#main2 .main_03 .innerBox {
-
+#main2 .main_03 .tabs_nav {
     width: 1200px;
-    gap: 30px;
 
 }
 
-#main2 .main_03 .innerBox .box {
+#main2 .main_03 .tabs_nav .content {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
 
-
-#main2 .main_03 .innerBox a {
-    display: block;
+#main2 .main_03 li {
+    justify-content: center;
+    padding: 20px 0 0 0;
 }
 
-#main2 .main_03 .innerBox .box .box00 {
+#main2 .main_03 a {
+    display: block;
+    padding: 15px 0 0 0;
+}
+
+#main2 .main_03 .tabs_nav .content {
+    margin: 0 0 70px 0;
+}
+
+#main2 .main_03 .tabs_nav .content li {
     width: 175px;
     height: 152px;
-    border: 1px solid #ddd;
-
+    background: #f1f1f1;
 }
 
 #slick {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+#slick .slider .inbox {
+    padding: 0 300px;
+}
+
+
+#slick .productArrows i {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #33ff33;
 
 }
 
-#slick .slider {
-    margin: 0 auto;
+#slick .productArrows i:nth-child(1) {
+    margin: 0 0 0 -200px;
+}
+
+#slick .productArrows i:nth-child(2) {
+    margin: 0 0 0 200px;
 }
 
 .customer {
@@ -222,12 +269,76 @@ header .btn {
     text-transform: uppercase;
 }
 
+#news {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#news h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 100px auto 10px auto;
+    text-align: center;
+}
+
+#news p {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin: auto auto 50px auto;
+}
+
+#news .container {
+    height: 300px;
+    display: block;
+}
+
+#news .container ul {
+    display: flex;
+
+}
+
+#news .container li {
+    display: table-cell;
+    width: 33%;
+    margin-bottom: 0;
+    padding: 0 45px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#news .container ul>li .news_title {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+#news .container ul>li .news_content {
+    height: 40px;
+    margin-bottom: 60px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+
+#news .container ul>li .news_date {
+    height: 40px;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 20px 0 0 0;
+
+}
+
+
+
+
+
 #footer {
     background: #f1f1f1;
     color: #231815;
-
     font-size: 13px;
-
 }
 
 .zeroTop {
@@ -239,13 +350,11 @@ header .btn {
 #footer .zeroTop .logo_top {
     margin: 0 0 30px 0;
     padding: 50px 0 0 0;
-
 }
 
 #footer .top {
     display: flex;
     justify-content: space-between;
-
 }
 
 #footer .top dt,
