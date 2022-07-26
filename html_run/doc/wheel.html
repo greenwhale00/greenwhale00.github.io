@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <style>
+        section {
+            background: #333;
+            height: 100vh;
+            position: relative;
+        }
+
+        section .wheel {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 60px;
+            border: 2px solid #fff;
+            border-radius: 20px;
+        }
+
+        section .wheel span {
+            font-size: 0;
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background: #fff;
+            border-radius: 2px;
+            animation: wheel 0.5s infinite;
+        }
+
+        @keyframes wheel {
+            to {
+                top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <a href="" class="wheel">
+            <span>아래로</span>
+        </a>
+    </section>
+</body>
+
+</html>
