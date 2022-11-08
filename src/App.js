@@ -92,8 +92,14 @@ const App = () => {
                     <div className="section">
 
                       <div className='inner'>
+                        <div className="inside">
+                          <div className="upper">
+                            <figure className='dot'></figure>
+                          </div>
+                          <p>{it.id}</p>
+                        </div>
 
-                        <p>{it.id}</p>
+
                         {
                           it.color?.map(color => <li style={{ background: color }}>{color}</li>)
                         }

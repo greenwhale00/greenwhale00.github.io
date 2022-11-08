@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $lineColor : #333;
+
+
 
 html {
     font-size: 10px;
@@ -36,6 +46,52 @@ body {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .inside {
+            position: absolute;
+            width: 1500px; 
+            height: 830px; 
+            background: #FFBECD; 
+            border: 2px solid $lineColor; 
+            border-radius: 20px;  
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+    
+            .upper {
+                position: relative; 
+                height: 40px; 
+                border-bottom: 2px solid $lineColor;
+    
+                .dot { 
+                    position: absolute; 
+                    width: 18px; 
+                    height: 18px; 
+                    border-radius: 50%; 
+                    background-color: #3CB264; 
+                    left: 5%; top: 30% 
+                }
+    
+                .dot::before { 
+                    content: ""; 
+                    position: absolute; 
+                    width: 18px; 
+                    height: 18px; 
+                    border-radius: 50%; 
+                    background-color: #F13A3A; 
+                    left: -50px; 
+                }
+    
+                .dot::after { 
+                    content: ""; 
+                    position: absolute; 
+                    width: 18px; height: 18px; 
+                    border-radius: 50%; 
+                    background-color: #FCD54A; 
+                    right: 25px; 
+                }
+            }
         }
     }
 
@@ -101,9 +157,9 @@ body {
         background: #F3CBFF; 
         border: 2px solid $lineColor; 
         border-radius: 20px;  
-        top: 5%; 
+        top: 50%; 
         left: 50%; 
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
 
         .upper {
             position: relative; 
@@ -115,7 +171,7 @@ body {
                 width: 18px; 
                 height: 18px; 
                 border-radius: 50%; 
-                background-color: $lineColor; 
+                background-color: #3CB264; 
                 left: 5%; top: 30% 
             }
 
@@ -125,7 +181,7 @@ body {
                 width: 18px; 
                 height: 18px; 
                 border-radius: 50%; 
-                background-color: $lineColor; 
+                background-color: #F13A3A; 
                 left: -50px; 
             }
 
@@ -134,7 +190,7 @@ body {
                 position: absolute; 
                 width: 18px; height: 18px; 
                 border-radius: 50%; 
-                background-color: $lineColor; 
+                background-color: #FCD54A; 
                 right: 25px; 
             }
         }
@@ -146,17 +202,14 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 80px;
-        font-weight: 600;
-        font-style: italic;
+        font-weight: 700;
+       
         text-align: center;
 
         li {
-            margin: 0 0 20px 0;
+            margin: 0 0 45px 0;
 
-            a {
-                
-                
-            }
+            a {font-family: 'GmarketSansMedium';}
         }
     }
 }
