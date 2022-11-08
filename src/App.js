@@ -90,7 +90,7 @@ const App = () => {
                 })
               }
               <div className="section">
-                <p className='inner'>Section 2</p>
+                <p className='inner'>Footer</p>
               </div>
             </ReactFullpage.Wrapper>
           );
