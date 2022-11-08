@@ -1,8 +1,8 @@
 const PD = [
-    { id: 1, title: "발뮤다", content: "first homepage", link: "greenwhale00.github.io/zegna", anchor: "pf01" },
-    { id: 2, title: "pf02", content: "second homepage", link: "greenwhale00.github.io/kinfolk", anchor: "pf02" },
-    { id: 3, title: "pf03", content: "third homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf03" },
-    { id: 4, title: "pf03", content: "fourth homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf04" },
+    { id: 1, title: "BALMUDA", content: "first homepage", link: "greenwhale00.github.io/zegna", anchor: "pf01" },
+    { id: 2, title: "ZEGNA", content: "second homepage", link: "greenwhale00.github.io/kinfolk", anchor: "pf02" },
+    { id: 3, title: "KINFOLK", content: "third homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf03" },
+    { id: 4, title: "pf04", content: "fourth homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf04" },
 ]
 
 

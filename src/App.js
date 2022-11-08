@@ -17,9 +17,10 @@ const App = () => {
         <div className='inside'>
           <div className="upper">
             <figure className='dot'></figure>
-
           </div>
-          <ul>
+
+          <ul className='co_center'>
+
             {
               data.map((it, idx) => {
                 return (
@@ -47,6 +48,7 @@ const App = () => {
         <span>커버 나오는 버튼</span>
       </button>
       <nav className='gnb'>
+
         <ul>
           {
             ['cover', ...ac, 'copyright'].map((it, idx) => {
