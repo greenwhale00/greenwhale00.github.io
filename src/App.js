@@ -40,9 +40,9 @@ const App = () => {
   return (
     <div className='FP'>
       <Cover />
-      <header className='header'>
+      {/* <header className='header'>
         2023 KHL portfolio {num} {con}
-      </header>
+      </header> */}
       <button onClick={() => setOn(!on)} className={`cover_open ${on ? 'on' : ''}`}>
         <span>커버 나오는 버튼</span>
       </button>
@@ -77,11 +77,11 @@ const App = () => {
             <ReactFullpage.Wrapper>
               <div className="section">
                 <div className='inner'>
-                  <p>Section 1 (welcome to fullpage.js)</p>
-                  <a href="#pf01">01</a>
-                  <button onClick={() => fullpageApi.moveSectionDown()}>
+                  <p className='title'>Portfolio</p>
+                  {/* <a href="#pf01">01</a> */}
+                  {/* <button onClick={() => fullpageApi.moveSectionDown()}>
                     Click me to move down
-                  </button>
+                  </button> */}
                 </div>
               </div>
               {

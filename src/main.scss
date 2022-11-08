@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 $lineColor : #333;
 
 html {
@@ -6,13 +8,15 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: 'Archivo', sans-serif;
 }
 
 .FP {
-    color: $lineColor;
+    // color: $lineColor;
     background-image: url(../public/img/bg01.png);
 
-    .section {
+    .section {        
+
         &.active {
             font-size: 10rem;
             transition: 1s 1s;
@@ -20,7 +24,20 @@ body {
     }
 
     .inner {
+        position: relative;
         height: 100vh;
+
+        .title {
+            position: absolute;
+            color: #f7f8f9;
+            font-size: 280px;
+            font-weight: 900;
+            font-style: italic;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     .gnb {
@@ -149,8 +166,9 @@ body {
     right: 5rem;
     z-index: 1000;
     font-size: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 6rem;
+    height: 6rem;
+    background: transparent;
 
     &::before {
         content: "";
@@ -158,8 +176,8 @@ body {
         top: 5px;
         left: 3px;
         right: 3px;
-        height: 1px;
-        background: $lineColor;
+        height: 3px;
+        background: #f7f8f9;
     }
 
     &::after {
@@ -168,8 +186,8 @@ body {
         bottom: 5px;
         left: 3px;
         right: 3px;
-        height: 1px;
-        background: $lineColor;
+        height: 3px;
+        background: #f7f8f9;
     }
 
     span {
@@ -179,8 +197,8 @@ body {
             top: calc(50% - 0.5px);
             left: 3px;
             right: 3px;
-            height: 1px;
-            background: $lineColor;
+            height: 3px;
+            background: #f7f8f9;
         }
 
         &::after {
@@ -189,8 +207,8 @@ body {
             top: calc(50% - 0.5px);
             left: 3px;
             right: 3px;
-            height: 1px;
-            background: $lineColor;
+            height: 3px;
+            background: #f7f8f9;
         }
     }
 }
