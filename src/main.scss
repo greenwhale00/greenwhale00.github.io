@@ -1,4 +1,4 @@
-$mainColor : #333;
+$lineColor : #333;
 
 html {
     font-size: 10px;
@@ -9,7 +9,8 @@ body {
 }
 
 .FP {
-    color: $mainColor;
+    color: $lineColor;
+    background-image: url(../public/img/bg01.png);
 
     .section {
         &.active {
@@ -27,13 +28,13 @@ body {
         top: 50%;
         right: 5rem;
         transform: translateY(-50%);
-        width: 3rem;
+        width: 6rem;
         z-index: 999;
 
         li {
             font-size: 0;
             position: relative;
-            height: 2rem;
+            height: 2.5rem;
 
             a {
                 display: block;
@@ -45,9 +46,10 @@ body {
                     top: 0;
                     right: 0;
                     width: 50%;
-                    height: 2px;
-                    background: $mainColor;
-                    transition: width 0.5s;
+                    height: 10px;
+                    border-radius: 50px;
+                    background: #f7f8f9;
+                    transition: width 0.5s
                 }
             }
         }
@@ -70,14 +72,67 @@ body {
     left: 0;
     right: 0;
     height: 100vh;
-    background: $mainColor;
+    background-image: url(../public/img/bg02.png);
     color: #fff;
     z-index: 999;
 
     &.on {
         display: block;
     }
+
+.inside {
+    width: 1500px;
+    height: 830px;
+    background: #F3CBFF;
+    border: 2px solid $lineColor;
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .upper {
+        position: relative;
+        height: 40px;
+        border-bottom: 2px solid $lineColor;
+
+        .dot { 
+            position: absolute;
+            width: 18px; 
+            height: 18px; 
+            border-radius: 50%; 
+            background-color: $lineColor;
+            left: 5%;
+            top: 30%
+        }
+
+        .dot::before {
+            content: "";
+            position: absolute;
+            width: 18px; 
+            height: 18px; 
+            border-radius: 50%; 
+            background-color: $lineColor;
+            left: -50px;
+        }
+        
+        .dot::after {
+            content: "";
+            position: absolute;
+            width: 18px; 
+            height: 18px; 
+            border-radius: 50%; 
+            background-color: $lineColor;
+            right: 25px;
+        }
+    }
 }
+    
+}
+
+
+
+
 
 .header {
     position: fixed;
@@ -85,6 +140,8 @@ body {
     left: 50%;
     z-index: 1000;
 }
+
+
 
 .cover_open {
     position: fixed;
@@ -102,7 +159,7 @@ body {
         left: 3px;
         right: 3px;
         height: 1px;
-        background: $mainColor;
+        background: $lineColor;
     }
 
     &::after {
@@ -112,7 +169,7 @@ body {
         left: 3px;
         right: 3px;
         height: 1px;
-        background: $mainColor;
+        background: $lineColor;
     }
 
     span {
@@ -123,7 +180,7 @@ body {
             left: 3px;
             right: 3px;
             height: 1px;
-            background: $mainColor;
+            background: $lineColor;
         }
 
         &::after {
@@ -133,7 +190,7 @@ body {
             left: 3px;
             right: 3px;
             height: 1px;
-            background: $mainColor;
+            background: $lineColor;
         }
     }
 }

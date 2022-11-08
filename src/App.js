@@ -14,19 +14,26 @@ const App = () => {
   const Cover = () => {
     return (
       <div className={`cover ${on ? 'on' : ''}`}>
-        <ul>
-          {
-            data.map((it, idx) => {
-              return (
-                <li>
-                  <a href={`#${it.anchor}`} onClick={
-                    () => setOn(!on)
-                  }>{it.title}</a>
-                </li>
-              )
-            })
-          }
-        </ul>
+        <div className='inside'>
+          <div className="upper">
+            <figure className='dot'></figure>
+
+          </div>
+          <ul>
+            {
+              data.map((it, idx) => {
+                return (
+                  <li>
+                    <a href={`#${it.anchor}`} onClick={
+                      () => setOn(!on)
+                    }>{it.title}</a>
+                  </li>
+                )
+              })
+            }
+          </ul>
+        </div>
+
       </div>
     )
   }
@@ -52,6 +59,8 @@ const App = () => {
           }
         </ul>
       </nav>
+
+
       <ReactFullpage
         //fullpage options
         licenseKey={'YOUR_KEY_HERE'}
@@ -79,7 +88,9 @@ const App = () => {
                 data.map(it => {
                   return (
                     <div className="section">
+
                       <div className='inner'>
+
                         <p>{it.id}</p>
                         {
                           it.color?.map(color => <li style={{ background: color }}>{color}</li>)
