@@ -51,7 +51,7 @@ body {
 
         .inside {
             position: absolute;
-            width: 1500px; 
+            width: 1420px; 
             height: 830px; 
             background: #FFBECD; 
             border: 2px solid $lineColor; 
@@ -153,7 +153,7 @@ body {
 
     .inside {
         position: absolute;
-        width: 1500px; 
+        width: 1420px; 
         height: 830px; 
         background: #e6d0ee; 
       
@@ -203,16 +203,19 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 80px;
+        font-size: 72px;
         font-weight: 700;
-       
         text-align: center;
 
         li {
-            margin: 0 0 45px 0;
+            margin: 0 0 40px 0;
 
-            a {font-family: 'Archivo', sans-serif; font-weight: 900; font-style: italic;}
+            a { font-family: 'Archivo', sans-serif; font-weight: 900; font-style: italic; }
+
+            &:last-child { margin-bottom: 0; }
         }
+
+        
     }
 }
 

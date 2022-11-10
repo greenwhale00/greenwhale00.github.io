@@ -3,7 +3,8 @@ const PD = [
     { id: 2, title: "ZEGNA", content: "second homepage", link: "greenwhale00.github.io/kinfolk", anchor: "pf02" },
     { id: 3, title: "KINFOLK", content: "third homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf03" },
     { id: 4, title: "pf04", content: "fourth homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf04" },
-    { id: 5, title: "TRAINING", content: "fourth homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf05" },
+    { id: 5, title: "pf05", content: "fifth homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf04" },
+    { id: 6, title: "TRAINING", content: "trainings homepage", link: "greenwhale00.github.io/balmuda", anchor: "pf05" },
 ]
 
 

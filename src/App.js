@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
+// import Sidebar from './Sidebar';
 import data from './portfolioDATA';
 import './reset.css';
 import './main.scss';
@@ -40,6 +41,7 @@ const App = () => {
   }
   return (
     <div className='FP'>
+
       <Cover />
       {/* <header className='header'>
         2023 KHL portfolio {num} {con}
@@ -77,6 +79,7 @@ const App = () => {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
+              {/* <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} /> */}
               <div className="section">
                 <div className='inner'>
                   <p className='title'>Portfolio</p>
